@@ -3,6 +3,12 @@
   border: none;
   box-shadow: unset;
 }
+.react-calendar__tile {
+  border-radius: 999px;
+}
+.react-calendar__tile:hover {
+  background-color: blue;
+}
 .react-calendar__navigation__next2-button,
 .react-calendar__navigation__prev2-button {
   display: none;
@@ -43,5 +49,9 @@ abbr {
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
   background-color: #77ddda;
+  border-radius: 999px;
+}
+.react-calendar__tile--adatugas {
+  background-color: #afaa3a77;
   border-radius: 999px;
 }

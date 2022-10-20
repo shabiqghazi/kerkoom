@@ -1,8 +1,11 @@
 import React from "react";
 
-export const PlusButton = () => {
+export const PlusButton = (props) => {
   return (
-    <div className="flex justify-center items-center w-16 h-16 rounded-full bg-primary fixed bottom-5 right-5">
+    <button
+      className="flex justify-center items-center w-16 h-16 rounded-full bg-primary fixed bottom-5 right-5 drop-shadow-2xl"
+      onClick={props.onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -13,6 +16,6 @@ export const PlusButton = () => {
           fill="#fff"
         />
       </svg>
-    </div>
+    </button>
   );
 };

@@ -13,21 +13,6 @@ export const Menu = () => {
       menu: "Kerja Kelompok",
       to: "/menu/kerja-kelompok",
     },
-    {
-      id: 3,
-      menu: "Ruang Diskusi",
-      to: "/menu/ruang-diskusi",
-    },
-    {
-      id: 4,
-      menu: "Curhat",
-      to: "/menu/curhat",
-    },
-    {
-      id: 5,
-      menu: "Pengumuman",
-      to: "/menu/pengumuman",
-    },
   ];
   return (
     <div className="bg-light min-h-screen">

@@ -17,6 +17,7 @@ export const Masuk = () => {
           <img src={ChevronLeftSolid} alt="" className="w-7 my-7 mx-5" />
         </Link>
         <div className="flex flex-col">
+          {" "}
           <h1 className="my-5 text-center text-3xl font-bold text-dark">
             Masuk
           </h1>
@@ -61,8 +62,11 @@ export const Masuk = () => {
               </label>
             </div>
             <div className="field mt-3">
-              <MyButton onClick={() => console.log(userData)}>Masuk</MyButton>
+              <Link to="/menu">
+                <MyButton onClick={() => console.log(userData)}>Masuk</MyButton>
+              </Link>
             </div>
+
             <div className="field mt-3 text-sm text-center text-[#4b4b4b]">
               Belum punya akun?{" "}
               <Link to="/daftar" className="text-primary">

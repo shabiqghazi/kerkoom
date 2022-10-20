@@ -9,6 +9,8 @@ import { KalenderTugas } from "./pages/KalenderTugas/KalenderTugas";
 import { RuangDiskusi } from "./pages/RuangDiskusi/RuangDiskusi";
 import { Curhat } from "./pages/Curhat/Curhat";
 import { Pengumuman } from "./pages/Pengumuman/Pengumuman";
+import { ChatKelompok } from "./pages/KerjaKelompok/ChatKelompok/ChatKelompok";
+import { InfoKelompok } from "./pages/KerjaKelompok/InfoKelompok/InfoKelompok";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,21 +37,25 @@ const router = createBrowserRouter([
     element: <KerjaKelompok />,
   },
   {
-    path: "/menu/ruang-diskusi",
-    element: <RuangDiskusi />,
+    path: "/menu/kerja-kelompok/:idKelompok",
+    element: <ChatKelompok />,
   },
   {
-    path: "/menu/curhat",
-    element: <Curhat />,
+    path: "/menu/kerja-kelompok/info-kelompok/:idKelompok",
+    element: <InfoKelompok />,
   },
   {
-    path: "/menu/pengumuman",
-    element: <Pengumuman />,
+    path: "/menu/kerja-kelompok/role-kelompok/:idKelompok",
+    element: <div>Role Kelompok 1</div>,
+  },
+  {
+    path: "/menu/kerja-kelompok/todo-list-kelompok/:idKelompok",
+    element: <div>Todo-list Kelompok 1</div>,
   },
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} className="top" />;
 };
 
 export default App;
